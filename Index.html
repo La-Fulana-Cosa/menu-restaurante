@@ -22,11 +22,11 @@
             background: linear-gradient(145deg, #ffffff, #f0f0f0);
             border-radius: 15px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            padding: 4vw;
-            width: 90%;
-            max-width: 500px;
+            padding: 3vw;
+            width: 80%; /* Reduce un poco más el ancho general */
+            max-width: 350px; /* Más angosto para pantallas grandes */
             text-align: center;
-            border: 3px solid #d4af37;
+            border: 2px solid #d4af37;
         }
 
         h1, h2 {
@@ -35,31 +35,31 @@
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem; /* Tamaño de fuente más pequeño */
             margin-top: 0;
         }
 
         h2 {
-            font-size: 1.5rem;
+            font-size: 1.2rem; /* Tamaño de fuente más pequeño */
             margin: 10px 0;
         }
 
         p {
-            font-size: 1rem;
-            margin: 20px 0;
+            font-size: 0.9rem; /* Tamaño de texto más pequeño */
+            margin: 15px 0;
             color: #666;
         }
 
         .menu-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
+            gap: 15px; /* Reduce el espacio entre los elementos */
         }
 
         .menu-item {
             background-color: white;
             border-radius: 8px;
-            padding: 20px;
+            padding: 15px; /* Reduce el padding */
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
@@ -71,9 +71,9 @@
         }
 
         .menu-item img {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 10px;
+            width: 40px; /* Tamaño más pequeño del icono */
+            height: 40px;
+            margin-bottom: 8px;
         }
 
         .menu-item a {
@@ -81,8 +81,8 @@
             text-decoration: none;
             color: #3498db;
             font-weight: bold;
-            font-size: 1rem;
-            margin-top: 10px;
+            font-size: 0.9rem; /* Tamaño de texto más pequeño */
+            margin-top: 5px;
         }
 
         .menu-item:hover {
@@ -90,8 +90,8 @@
         }
 
         footer {
-            margin-top: 30px;
-            font-size: 0.8rem;
+            margin-top: 20px;
+            font-size: 0.7rem;
             color: #999;
         }
 
@@ -100,15 +100,37 @@
             .menu-grid {
                 grid-template-columns: 1fr;
             }
-        }
 
-        @media (max-width: 480px) {
+            .menu-container {
+                padding: 4vw;
+                width: 90%;
+            }
+
             h1 {
                 font-size: 1.8rem;
             }
 
             h2 {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+
+            .menu-item {
+                padding: 10px;
+            }
+
+            .menu-item img {
+                width: 35px;
+                height: 35px;
             }
         }
     </style>
